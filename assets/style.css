@@ -44,7 +44,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1.15re
 .btn-outline{background:transparent;color:var(--core);border:1px solid var(--mist)}
 .btn-outline:hover{border-color:var(--pulse);color:var(--pulse)}
 
-/* STATS — light accessible panel (per stats_acessivel.html) */
+/* STATS: light accessible panel (per stats_acessivel.html) */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);margin:0 var(--gutter);background:var(--stone);border-radius:14px;overflow:hidden}
 .stat{padding:2rem 1rem;text-align:center;border-right:2px solid var(--white)}
 .stat:last-child{border-right:none}

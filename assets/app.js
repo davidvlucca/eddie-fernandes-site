@@ -41,7 +41,7 @@ document.querySelectorAll('.faq-q').forEach(function (q) {
   });
 });
 
-// ---- Donate amount selection (visual only — donations not yet active) ----
+// ---- Donate amount selection (visual only, donations not yet active) ----
 document.querySelectorAll('.amt-btn').forEach(function (btn) {
   btn.addEventListener('click', function () {
     document.querySelectorAll('.amt-btn').forEach(function (b) {
@@ -60,7 +60,7 @@ document.querySelectorAll('.amt-btn').forEach(function (btn) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var v = function (n) { return (form.elements[n] && form.elements[n].value || '').trim(); };
-    var subject = 'Website request' + (v('type') ? ' — ' + v('type') : '');
+    var subject = 'Website request' + (v('type') ? ': ' + v('type') : '');
     var body =
       'Name: ' + v('name') + '\n' +
       'Email: ' + v('email') + '\n' +
