@@ -11,16 +11,16 @@
 </head>
 <body>
 <div class="site">
-  <nav>
+  <nav aria-label="Main">
     <a class="nav-name" href="index.html">Dr. Eddie J. Fernandes</a>
-    <ul class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="about.html" class="active" aria-current="page">About</a></li>
       <li><a href="books.html">Books</a></li>
       <li><a href="mentoring.html">Mentoring</a></li>
       <li><a href="donate.html">Donate</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- ABOUT -->
@@ -58,12 +58,12 @@
     <span class="section-tag">FAQ</span>
     <h2>Common questions.</h2>
     <div style="margin-top:1.5rem">
-      <div class="faq-item"><div class="faq-q">How can I invite Eddie to speak at my event? <span class="faq-arrow">▾</span></div><div class="faq-a">You can use the contact form on this website to send a speaking request. Please include the event date, location, format, and expected audience. Eddie's team will respond within a few business days.</div></div>
-      <div class="faq-item"><div class="faq-q">What languages does Eddie preach in? <span class="faq-arrow">▾</span></div><div class="faq-a">Eddie is fully fluent in English and Portuguese and can preach or teach in both languages.</div></div>
-      <div class="faq-item"><div class="faq-q">Are mentoring sessions available online? <span class="faq-arrow">▾</span></div><div class="faq-a">Yes. Sessions are available both in-person (Cascais, Portugal) and online via video call. Schedule through the Mentoring page.</div></div>
-      <div class="faq-item"><div class="faq-q">Where can I buy Eddie's books? <span class="faq-arrow">▾</span></div><div class="faq-a">All books are available on Amazon and, for some titles, on Clube de Autores. Visit the Books page for direct purchase links for each title.</div></div>
-      <div class="faq-item"><div class="faq-q">How are donations used? <span class="faq-arrow">▾</span></div><div class="faq-a">Donations support Eddie's global preaching and teaching ministry, mission trips, church planting, and the production of new books and resources.</div></div>
-      <div class="faq-item"><div class="faq-q">Is Riverside International Church open to visitors? <span class="faq-arrow">▾</span></div><div class="faq-a">Yes! Riverside International Church in Cascais welcomes visitors. Services are held in English and Portuguese. Contact us for service times and location.</div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a1">How can I invite Eddie to speak at my event? <span class="faq-arrow" aria-hidden="true">▾</span></button><div class="faq-a" id="faq-a1">You can use the contact form on this website to send a speaking request. Please include the event date, location, format, and expected audience. Eddie's team will respond within a few business days.</div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a2">What languages does Eddie preach in? <span class="faq-arrow" aria-hidden="true">▾</span></button><div class="faq-a" id="faq-a2">Eddie is fully fluent in English and Portuguese and can preach or teach in both languages.</div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a3">Are mentoring sessions available online? <span class="faq-arrow" aria-hidden="true">▾</span></button><div class="faq-a" id="faq-a3">Yes. Sessions are available both in-person (Cascais, Portugal) and online via video call. Schedule through the Mentoring page.</div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a4">Where can I buy Eddie's books? <span class="faq-arrow" aria-hidden="true">▾</span></button><div class="faq-a" id="faq-a4">All books are available on Amazon and, for some titles, on Clube de Autores. Visit the Books page for direct purchase links for each title.</div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a5">How are donations used? <span class="faq-arrow" aria-hidden="true">▾</span></button><div class="faq-a" id="faq-a5">Donations support Eddie's global preaching and teaching ministry, mission trips, church planting, and the production of new books and resources.</div></div>
+      <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a6">Is Riverside International Church open to visitors? <span class="faq-arrow" aria-hidden="true">▾</span></button><div class="faq-a" id="faq-a6">Yes! Riverside International Church in Cascais welcomes visitors. Services are held in English and Portuguese. Contact us for service times and location.</div></div>
     </div>
   </section>
 
@@ -75,7 +75,7 @@
     </div>
     <div>
       <div class="footer-contact-label">Contact</div>
-      <div class="footer-email">eddiejfernandes@gmail.com</div>
+      <div class="footer-email"><a href="mailto:eddiejfernandes@gmail.com">eddiejfernandes@gmail.com</a></div>
       <div class="footer-copy">© 2026 Dr. Eddie J. Fernandes · All rights reserved.</div>
       <div class="footer-creative">Developed by <a href="https://kairos-sell.vercel.app/" target="_blank" rel="noopener">Kairos</a></div>
     </div>

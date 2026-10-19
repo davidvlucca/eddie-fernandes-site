@@ -15,9 +15,9 @@ img{max-width:100%}
 .site{max-width:var(--maxw);margin:0 auto;width:100%}
 
 /* Sans for titles, nav, buttons, labels, UI */
-nav,.nav-name,.nav-links a,h2,h3,.section-tag,.btn-primary,.btn-outline,.btn-purple,.btn-donate,.amt-btn,
+nav,.nav-name,.nav-links a,h2,h3,.section-tag,.btn-primary,.btn-outline,.btn-donate,.amt-btn,
 .stat-label,.test-card cite,.f-label,.faq-q,.book-title,.book-buy,.m-card h3,.m-icon,
-.footer-name,.footer-role,.footer-contact-label,.footer-creative,.footer-socials,
+.footer-name,.footer-role,.footer-contact-label,.footer-creative,
 .back-btn,.f-field input,.f-field select,.f-field textarea{font-family:var(--sans)}
 
 /* NAV */
@@ -30,7 +30,6 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1.15re
 
 /* HERO */
 .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,4vw,4.5rem);align-items:center;padding:clamp(2.5rem,5vw,5.5rem) var(--gutter)}
-.hero-tag{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pulse);display:block;margin-bottom:1.3rem}
 .hero h1{font-family:var(--serif);font-size:clamp(42px,6vw,76px);font-weight:600;line-height:1.04;letter-spacing:-.01em;margin-bottom:1.5rem;color:var(--core)}
 .hero-sub{font-family:var(--serif);font-size:clamp(18px,1.4vw,22px);font-weight:500;line-height:1.7;color:var(--core-3);margin-bottom:2rem;max-width:36rem}
 .hero-img{border-radius:16px;overflow:hidden;aspect-ratio:4/5}
@@ -38,13 +37,11 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:1.15re
 .btns{display:flex;gap:14px;flex-wrap:wrap}
 
 /* BUTTONS */
-.btn-primary,.btn-outline,.btn-purple,.btn-donate{font-size:14px;font-weight:600;border-radius:9px;padding:13px 26px;display:inline-block;text-decoration:none;cursor:pointer;letter-spacing:.01em}
+.btn-primary,.btn-outline,.btn-donate{font-size:14px;font-weight:600;border-radius:9px;padding:13px 26px;display:inline-block;text-decoration:none;cursor:pointer;letter-spacing:.01em}
 .btn-primary{background:var(--pulse);color:var(--white);border:none}
 .btn-primary:hover{background:var(--pulse-2)}
 .btn-outline{background:transparent;color:var(--core);border:1px solid var(--mist)}
 .btn-outline:hover{border-color:var(--pulse);color:var(--pulse)}
-.btn-purple{background:var(--pulse);color:var(--white);white-space:nowrap}
-.btn-purple:hover{background:var(--pulse-2)}
 
 /* STATS — light accessible panel (per stats_acessivel.html) */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);margin:0 var(--gutter);background:var(--stone);border-radius:14px;overflow:hidden}
@@ -74,14 +71,11 @@ p{font-family:var(--serif);font-size:18px;line-height:1.7;color:var(--core-3)}
 .books-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(12px,1.5vw,22px);margin-top:2rem}
 .book-card{border-radius:10px;overflow:hidden;border:1px solid var(--mist-2);cursor:pointer;transition:transform .2s,box-shadow .2s;text-decoration:none;display:block;background:var(--white)}
 .book-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.13)}
-.book-card.soon{cursor:default}
-.book-card.soon:hover{transform:none;box-shadow:none}
 .book-cover{aspect-ratio:2/3;overflow:hidden;background:var(--mist-3)}
 .book-cover img{width:100%;height:100%;object-fit:cover}
 .book-info{padding:11px 11px 13px}
 .book-title{font-size:12px;font-weight:600;color:var(--core);line-height:1.3;margin-bottom:3px}
 .book-buy{font-size:11px;color:var(--pulse);font-weight:600}
-.book-buy.muted{color:var(--core-3)}
 
 /* MENTORING */
 .mentoring-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:2rem}
@@ -89,11 +83,6 @@ p{font-family:var(--serif);font-size:18px;line-height:1.7;color:var(--core-3)}
 .m-icon{width:38px;height:38px;background:var(--pulse-4);border-radius:9px;display:flex;align-items:center;justify-content:center;margin-bottom:.85rem;color:var(--pulse);font-size:16px}
 .m-card h3{font-size:16.5px}
 .m-card p{font-size:15px;margin-bottom:1.1rem}
-
-/* CTA BLOCK */
-.cta-block{background:var(--core);border-radius:16px;padding:clamp(2rem,3vw,3rem) clamp(2rem,3.5vw,3.5rem);display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;margin:0 var(--gutter)}
-.cta-block h2{color:var(--white);font-size:clamp(22px,2.2vw,28px);margin-bottom:.5rem}
-.cta-block p{color:var(--core-4);font-size:15px}
 
 /* VIDEO */
 .video-box{background:var(--mist-3);border-radius:16px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px solid var(--mist-2);margin-top:2rem;overflow:hidden;max-width:1100px}
@@ -111,13 +100,14 @@ p{font-family:var(--serif);font-size:18px;line-height:1.7;color:var(--core-3)}
 .donate-box h2{color:#fff;font-size:clamp(22px,2.2vw,28px);margin-bottom:.75rem}
 .donate-box p{color:rgba(255,255,255,.78);font-size:16px;max-width:520px;margin:0 auto 1.75rem}
 .donate-amts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
-.amt-btn{padding:10px 22px;border:1.5px solid rgba(255,255,255,.5);border-radius:9px;color:#fff;font-size:14px;font-weight:600;cursor:pointer;background:transparent}
-.amt-btn:hover,.amt-btn.active{background:#fff;color:var(--pulse)}
-.btn-donate{background:rgba(255,255,255,.28);color:#fff;cursor:not-allowed;border:1px solid rgba(255,255,255,.45)}
+.amt-btn{font-family:var(--sans);padding:10px 22px;border:1.5px solid rgba(255,255,255,.5);border-radius:9px;color:#fff;font-size:14px;font-weight:600;cursor:pointer;background:transparent}
+.amt-btn:hover,.amt-btn.active,.amt-btn[aria-pressed="true"]{background:#fff;color:var(--pulse)}
+.amt-btn:focus-visible,.faq-q:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.btn-donate{font-family:var(--sans);background:rgba(255,255,255,.28);color:#fff;cursor:not-allowed;border:1px solid rgba(255,255,255,.45)}
 
 /* FAQ */
-.faq-item{border-bottom:1px solid var(--mist-2);padding:1.25rem 0;cursor:pointer}
-.faq-q{font-size:16px;font-weight:600;color:var(--core);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-item{border-bottom:1px solid var(--mist-2);padding:1.25rem 0}
+.faq-q{width:100%;background:none;border:0;padding:0;text-align:left;cursor:pointer;font-family:var(--sans);font-size:16px;font-weight:600;color:var(--core);display:flex;justify-content:space-between;align-items:center;gap:1rem}
 .faq-a{font-family:var(--serif);font-size:16.5px;color:var(--core-3);line-height:1.7;margin-top:.85rem;display:none}
 .faq-item.open .faq-a{display:block}
 .faq-item.open .faq-arrow{transform:rotate(180deg)}
@@ -147,6 +137,8 @@ footer{margin-top:2rem;padding:clamp(2.5rem,3.5vw,3.5rem) var(--gutter);display:
 .footer-role{font-size:11.5px;color:var(--core-3);margin-bottom:.9rem;letter-spacing:.07em;text-transform:uppercase}
 .footer-contact-label{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--pulse);margin-bottom:.45rem}
 .footer-email{font-family:var(--serif);font-size:17px;color:var(--core);margin-bottom:.7rem}
+.footer-email a{color:inherit;text-decoration:none}
+.footer-email a:hover{color:var(--pulse);text-decoration:underline}
 .footer-copy{font-size:11.5px;color:var(--core-3);margin-bottom:.35rem;font-family:var(--sans)}
 .footer-creative{font-size:11.5px;color:#9A9AA2;font-weight:500}
 .footer-creative a{color:#9A9AA2;text-decoration:none}
@@ -165,7 +157,6 @@ footer{margin-top:2rem;padding:clamp(2.5rem,3.5vw,3.5rem) var(--gutter);display:
   .about-grid{grid-template-columns:1fr;gap:1.5rem}
   .about-img{max-width:360px}
   .mentoring-grid,.test-grid{grid-template-columns:1fr}
-  .cta-block{grid-template-columns:1fr;text-align:left}
   .form-grid{grid-template-columns:1fr}
   .book-detail-grid{grid-template-columns:1fr;gap:1.5rem}
   .book-detail-cover{max-width:220px}
@@ -181,8 +172,8 @@ footer{margin-top:2rem;padding:clamp(2.5rem,3.5vw,3.5rem) var(--gutter);display:
 .nav-toggle span + span{margin-top:5px}
 
 /* ===== Micro-interactions ===== */
-.btn-primary,.btn-outline,.btn-purple,.amt-btn{transition:background .2s ease,color .2s ease,border-color .2s ease,transform .15s ease,box-shadow .2s ease}
-.btn-primary:hover,.btn-purple:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(87,80,178,.28)}
+.btn-primary,.btn-outline,.amt-btn{transition:background .2s ease,color .2s ease,border-color .2s ease,transform .15s ease,box-shadow .2s ease}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(87,80,178,.28)}
 .btn-outline:hover{transform:translateY(-1px)}
 .amt-btn:hover{transform:translateY(-1px)}
 .m-card{transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
@@ -196,7 +187,6 @@ footer{margin-top:2rem;padding:clamp(2.5rem,3.5vw,3.5rem) var(--gutter);display:
 
 /* ===== Hero entrance ===== */
 @keyframes heroIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-.hero-tag{animation:heroIn .55s ease both}
 .hero h1{animation:heroIn .55s ease .07s both}
 .hero-sub{animation:heroIn .55s ease .14s both}
 .btns{animation:heroIn .55s ease .21s both}
@@ -205,6 +195,7 @@ footer{margin-top:2rem;padding:clamp(2.5rem,3.5vw,3.5rem) var(--gutter);display:
 /* ===== Scroll reveal (added by JS) ===== */
 .js-reveal .section,.js-reveal .stats{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .js-reveal .section.in,.js-reveal .stats.in{opacity:1;transform:none}
+@media print{.js-reveal .section,.js-reveal .stats{opacity:1;transform:none;transition:none}}
 
 @media(prefers-reduced-motion:reduce){
   *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
@@ -213,7 +204,7 @@ footer{margin-top:2rem;padding:clamp(2.5rem,3.5vw,3.5rem) var(--gutter);display:
 
 /* ===== Hamburger nav (<=640px) ===== */
 @media(max-width:640px){
-  nav{position:relative;flex-wrap:nowrap}
+  nav{flex-wrap:nowrap;box-shadow:none;clip-path:none}
   .nav-toggle{display:block}
   .nav-links{
     position:absolute;top:100%;left:0;right:0;
@@ -238,7 +229,6 @@ footer{margin-top:2rem;padding:clamp(2.5rem,3.5vw,3.5rem) var(--gutter);display:
 @media(max-width:480px){
   .hero{display:flex;flex-direction:column;align-items:stretch}
   .hero > div:first-child{display:contents}
-  .hero-tag{order:1}
   .hero h1{order:2}
   .hero-sub{order:3;margin-bottom:1.5rem}
   .hero-img{order:4;max-width:100%;margin:0 0 1.75rem}

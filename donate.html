@@ -11,16 +11,16 @@
 </head>
 <body>
 <div class="site">
-  <nav>
+  <nav aria-label="Main">
     <a class="nav-name" href="index.html">Dr. Eddie J. Fernandes</a>
-    <ul class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="books.html">Books</a></li>
       <li><a href="mentoring.html">Mentoring</a></li>
-      <li><a href="donate.html" class="active">Donate</a></li>
+      <li><a href="donate.html" class="active" aria-current="page">Donate</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
 
   <section class="section">
@@ -30,14 +30,14 @@
     <div class="donate-box">
       <h2>Make a Difference Today</h2>
       <p>Every contribution — large or small — extends the reach of the Gospel and strengthens the global Church.</p>
-      <div class="donate-amts">
-        <div class="amt-btn active">€10</div>
-        <div class="amt-btn">€25</div>
-        <div class="amt-btn">€50</div>
-        <div class="amt-btn">€100</div>
-        <div class="amt-btn">Other</div>
+      <div class="donate-amts" role="group" aria-label="Donation amount">
+        <button class="amt-btn active" type="button" aria-pressed="true">€10</button>
+        <button class="amt-btn" type="button" aria-pressed="false">€25</button>
+        <button class="amt-btn" type="button" aria-pressed="false">€50</button>
+        <button class="amt-btn" type="button" aria-pressed="false">€100</button>
+        <button class="amt-btn" type="button" aria-pressed="false">Other</button>
       </div>
-      <span class="btn-donate" aria-disabled="true">Donate now — Em breve / Coming soon</span>
+      <button class="btn-donate" type="button" disabled>Donate now — Em breve / Coming soon</button>
       <p style="font-size:11px;margin-top:1rem;color:rgba(255,255,255,.6)">Online donations are coming soon. For bank transfer or other methods in the meantime, please <a href="mailto:eddiejfernandes@gmail.com" style="color:#fff;text-decoration:underline">contact us directly</a>.</p>
     </div>
   </section>
@@ -50,7 +50,7 @@
     </div>
     <div>
       <div class="footer-contact-label">Contact</div>
-      <div class="footer-email">eddiejfernandes@gmail.com</div>
+      <div class="footer-email"><a href="mailto:eddiejfernandes@gmail.com">eddiejfernandes@gmail.com</a></div>
       <div class="footer-copy">© 2026 Dr. Eddie J. Fernandes · All rights reserved.</div>
       <div class="footer-creative">Developed by <a href="https://kairos-sell.vercel.app/" target="_blank" rel="noopener">Kairos</a></div>
     </div>

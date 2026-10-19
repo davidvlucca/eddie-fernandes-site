@@ -11,13 +11,16 @@
 </head>
 <body>
 <div class="site">
-  <nav>
+  <nav aria-label="Main">
     <a class="nav-name" href="index.html">Dr. Eddie J. Fernandes</a>
-    <ul class="nav-links">
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="books.html" class="active">Books</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="books.html" class="active" aria-current="page">Books</a></li>
+      <li><a href="mentoring.html">Mentoring</a></li>
+      <li><a href="donate.html">Donate</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
 
   <div class="book-detail">
@@ -49,7 +52,7 @@ Written for husbands, fathers, leaders, pastors, mentors, and men's groups, it o
     </div>
     <div>
       <div class="footer-contact-label">Contact</div>
-      <div class="footer-email">eddiejfernandes@gmail.com</div>
+      <div class="footer-email"><a href="mailto:eddiejfernandes@gmail.com">eddiejfernandes@gmail.com</a></div>
       <div class="footer-copy">© 2026 Dr. Eddie J. Fernandes · All rights reserved.</div>
       <div class="footer-creative">Developed by <a href="https://kairos-sell.vercel.app/" target="_blank" rel="noopener">Kairos</a></div>
     </div>
