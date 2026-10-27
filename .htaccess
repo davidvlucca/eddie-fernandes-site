@@ -16,6 +16,12 @@ ErrorDocument 404 /404.html
 # Never list directory contents (e.g. /assets/img/).
 Options -Indexes
 
+# Old photo names (before Oct 2026) still requested by pages cached in visitors' browsers.
+<IfModule mod_alias.c>
+  Redirect 301 /assets/img/eddie.png /assets/img/eddie.jpg
+  Redirect 301 /assets/img/eddie_marta.png /assets/img/eddie-marta.jpg
+</IfModule>
+
 
 # -----------------------------------------------------------------------------
 # Block private files
